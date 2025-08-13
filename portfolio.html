@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETIKIKOTA SUJITHA - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f4f7fb;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 10px 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #4facfe;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom-left-radius: 50% 20px;
+            border-bottom-right-radius: 50% 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .profile-card {
+            background: white;
+            max-width: 800px;
+            margin: -50px auto 20px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .profile-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #4facfe;
+            object-fit: cover;
+        }
+        .section {
+            background: white;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #4facfe;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+            .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+        
+    .skill-box {
+        background: #5ab6da;
+        padding: 10px 15px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: bold;
+    }
+        ul {
+            padding-left: 20px;
+            list-style: square;
+        }
+        .contact p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#internships">Internships</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>ETIKIKOTA SUJITHA</h1>
+        <p>Computer Science Graduate</p>
+    </header>
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+        <img src="profile.jpg" alt="Profile Picture">
+        <p style="margin-top:10px;">
+            Passionate about building impactful solutions using modern technologies. 
+            Thrive in challenging environments and love applying my skills to real-world projects.
+        </p>
+    </div>
+
+    
+    <!-- Education -->
+    <div id="education" class="section">
+        <h2>🎓 Educational Background</h2>
+        <ul>
+            <li>B.Tech in Computer Science and Technology, MITS | JNTUA | 7.3 CGPA (2024)</li>
+            <li>Intermediate, Sri Siddhartha Junior College | 7.7 CGPA (2020)</li>
+            <li>Class X, Gnanodaya English Medium High School | 9.7 CGPA (2018)</li>
+        </ul>
+    </div>
+
+    <!-- Internships -->
+    <div id="internships" class="section">
+        <h2>💼 Internship / Work Experience</h2>
+        <ul>
+            <li>Python Programming Internship at Conzura Soft Solutions - Developed "Voice Detection" using SpeechRecognition & Deep Learning (Jul–Aug 2022)</li>
+            <li>Cloud Computing Internship at YBI Foundation - Load Balancing in AWS EC2 (Aug–Oct 2023)</li>
+            <li>Machine Learning Internship at Slash Mark (AICTE) - AI-based HealthCare Chatbot (Dec 2023 – Apr 2024)</li>
+        </ul>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects" class="section">
+        <h2>📌 Projects</h2>
+        <ul>
+            <li>Voice Detection Using Python Programming (Python, TensorFlow)</li>
+            <li>Load Balancing in EC2 (AWS EC2, Load Balancer)</li>
+        </ul>
+    </div>
+
+    <!-- Skills -->
+    <div class="container" id="skills">
+    <h2><i class="fas fa-lightbulb"></i> Skills</h2>
+    <div class="skills">
+        <div class="skill-box"><i class="fab fa-java"></i> Java</div>
+        <div class="skill-box"><i class="fab fa-python"></i> Python</div>
+        <div class="skill-box"><i class="fas fa-database"></i> SQL</div>
+        <div class="skill-box"><i class="fab fa-aws"></i> AWS</div>
+        <div class="skill-box"><i class="fas fa-cloud"></i> Cloud Computing</div>
+        <div class="skill-box"><i class="fab fa-windows"></i> Windows</div>
+    </div>
+</div>
+
+    <!-- Certifications -->
+    <div id="certifications" class="section">
+        <h2>🏆 Certifications</h2>
+        <ul>
+            <li>Python Core Course (Sololearn, 2022)</li>
+            <li>Google Finance Data Analyst Professional Certificate (Coursera, 2023)</li>
+            <li>Management Information System (NPTEL, 2023)</li>
+        </ul>
+    </div>
+
+    <!-- Contact -->
+<div class="section contact" id="contact">
+    <h2>📞 Contact</h2>
+    <p>Email: <a href="mailto:sujitha.e27@gmail.com">sujitha.e27@gmail.com</a></p>
+    <p>Phone: <a href="tel:9392762726">9392762726</a></p>
+    <p>Address: 6-97 Poojarivaripalli, Kurabalakota, Annamaya, Andhra Pradesh</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sujitha-e-765197270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com/in/Etikikota Sujitha</a></p>
+    <p>Github: <a href="https://github.com/Sujitha-alt/DayWise-Repository.git" target="_blank">Github</a></p>
+</div>
+
+
+</body>
+</html>
