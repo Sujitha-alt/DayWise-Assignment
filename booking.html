@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Bliss - Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">Travel Bliss</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="bookings.html" class="active">Booking</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Book Your Trip</h1>
+    <form class="booking-form">
+      <div class="form-group">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" class="form-control" placeholder="Enter your full name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="destination">Destination</label>
+        <select id="destination" class="form-control" required>
+          <option value="" disabled selected>Select a destination</option>
+          <option value="bali">Bali, Indonesia</option>
+          <option value="rome">Rome, Italy</option>
+          <option value="sydney">Sydney, Australia</option>
+          <option value="capetown">Cape Town, South Africa</option>
+          <option value="rio">Rio de Janeiro, Brazil</option>
+          <option value="dubai">Dubai, UAE</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="travel-date">Travel Date</label>
+        <input type="date" id="travel-date" class="form-control" required>
+      </div>
+      
+      <div class="form-group">
+        <label>Travel Type</label>
+        <div class="radio-group">
+          <div class="radio-option">
+            <input type="radio" id="solo" name="travel-type" value="solo" required>
+            <label for="solo">Solo</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="couple" name="travel-type" value="couple">
+            <label for="couple">Couple</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="family" name="travel-type" value="family">
+            <label for="family">Family</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="group" name="travel-type" value="group">
+            <label for="group">Group</label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Additional Services</label>
+        <div class="checkbox-group">
+          <div class="checkbox-option">
+            <input type="checkbox" id="insurance" name="services" value="insurance">
+            <label for="insurance">Travel Insurance</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" id="guide" name="services" value="guide">
+            <label for="guide">Tour Guide</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" id="airport" name="services" value="airport">
+            <label for="airport">Airport Transfer</label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="notes">Special Requests</label>
+        <textarea id="notes" class="form-control" rows="4" placeholder="Any special requirements or requests"></textarea>
+      </div>
+      
+      <button type="submit" class="submit-btn">Complete Booking</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Travel Bliss. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.booking-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your booking! We will contact you shortly.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

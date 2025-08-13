@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Registration Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form class="card" action="success.html" method="get">
+    <h2>Registration Form</h2>
+
+    <label for="name">Full Name:</label>
+    <input id="name" name="name" type="text" required>
+
+    <label for="email">Email Address:</label>
+    <input id="email" name="email" type="email" required>
+
+    <label for="password">Password:</label>
+    <input id="password" name="password" type="password" required>
+
+
+
+    <label>Gender:</label>
+    <div class="radios">
+      <label><input type="radio" name="gender" value="Male" checked> Male</label>
+      <label><input type="radio" name="gender" value="Female"> Female</label>
+      <label><input type="radio" name="gender" value="Other"> Other</label>
+    </div>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="">-- Select --</option>
+      <option>India</option>
+      <option>United States</option>
+      <option>United Kingdom</option>
+      <option>Australia</option>
+    </select>
+
+    <button class="btn" type="submit">Register</button>
+  </form>
+</body>
+</html>
